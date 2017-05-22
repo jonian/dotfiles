@@ -18,7 +18,8 @@ source /usr/share/chruby/chruby.sh
 source /usr/share/chruby/auto.sh
 
 # Node JS
-export PATH="$HOME/.node_modules/bin:$PATH"
+export NPM_HOME=$(npm root)
+export PATH="$NPM_HOME/bin:$PATH"
 
 # Composer packages
 export COMPOSER_HOME="$HOME/.composer"
