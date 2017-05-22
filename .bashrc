@@ -24,6 +24,9 @@ export PATH="$HOME/.node_modules/bin:$PATH"
 export COMPOSER_HOME="$HOME/.composer"
 export PATH="$COMPOSER_HOME/vendor/bin:$PATH"
 
+# Local packages
+export PATH="$HOME/.local/bin:$PATH"
+
 # Tilix
 source /etc/profile.d/vte.sh
 
