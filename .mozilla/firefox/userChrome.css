@@ -1,0 +1,78 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+#TabsToolbar .tabbrowser-tab::after,
+#TabsToolbar .tabbrowser-tab::before {
+  visibility: hidden !important;
+}
+
+#TabsToolbar .tabbrowser-tab {
+  background: #272b35 !important;
+  box-shadow: none !important;
+}
+
+#TabsToolbar .tabbrowser-tab[selected] {
+  background: #393f4c !important;
+  box-shadow: 1px 0 0 #1f222a, -1px 0 0 #1f222a !important;
+}
+
+#TabsToolbar .tabbrowser-tab:hover:not([selected]) {
+  background: #1f222a !important;
+}
+
+#TabsToolbar .tabs-newtab-button {
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+#nav-bar {
+  padding-top: 4px  !important;
+  padding-bottom: 4px  !important;
+}
+
+#urlbar-wrapper {
+  clip-path: none !important;
+  margin-inline-start: 0 !important;
+}
+
+#urlbar {
+  border-inline-start: 1px solid #1f222a !important;
+  border-top-left-radius: 2px !important;
+  border-bottom-left-radius: 2px !important;
+  margin-left: 4px !important;
+}
+
+#urlbar,
+#navigator-toolbox .searchbar-textbox {
+  background-color: #272b35 !important;
+  background-image: none !important;
+  height: 26px !important;
+}
+
+#forward-button {
+  -moz-box-align: center !important;
+  margin-right: 2px !important;
+}
+
+#back-button > .toolbarbutton-icon,
+#forward-button > .toolbarbutton-icon {
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+#navigator-toolbox .toolbarbutton-1 .toolbarbutton-icon,
+#navigator-toolbox .toolbarbutton-1 .dropmarker-icon,
+#navigator-toolbox .toolbarbutton-1 .toolbarbutton-badge-stack {
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+#navigator-toolbox .toolbarbutton-menubutton-dropmarker:before {
+  visibility: hidden !important;
+}
+
+#PanelUI-button {
+  border-image: none !important;
+  border-left: 1px solid #272b35 !important;
+}
