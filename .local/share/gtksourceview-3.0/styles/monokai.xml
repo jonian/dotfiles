@@ -1,0 +1,46 @@
+<style-scheme name="Monokai" id="monokai" version="1.0">
+  <author>Hardpixel</author>
+  <description>Color scheme using Monokai color palette</description>
+
+  <color name="background" value="#232729"/>
+  <color name="inactive"   value="#646665"/>
+  <color name="select"     value="#363d40"/>
+  <color name="white"      value="#f8f8f2"/>
+  <color name="black"      value="#1e2224"/>
+  <color name="magenta"    value="#f92672"/>
+  <color name="cyan"       value="#66d9ef"/>
+  <color name="gray"       value="#8d908f"/>
+  <color name="green"      value="#a6e22e"/>
+  <color name="yellow"     value="#f4bf75"/>
+  <color name="orange"     value="#FD971F"/>
+  <color name="purple"     value="#ae81ff"/>
+
+  <style name="text"                foreground="white" />
+  <style name="draw-spaces"         foreground="select" />
+  <style name="cursor"              foreground="white" />
+  <style name="secondary-cursor"    foreground="white" />
+  <style name="current-line"        background="black" />
+  <style name="current-line-number" background="black" />
+  <style name="background-pattern"  background="black" />
+  <style name="selection"           background="select" />
+
+  <style name="line-numbers"     foreground="gray"       background="background" />
+  <style name="bracket-match"    foreground="white"      background="gray" />
+  <style name="bracket-mismatch" foreground="magenta"    background="gray" />
+  <style name="search-match"     foreground="background" background="yellow" />
+
+  <style name="def:comment"      foreground="inactive" />
+  <style name="def:shebang"      foreground="inactive" />
+  <style name="def:constant"     foreground="cyan" />
+  <style name="def:special-char" foreground="green" />
+  <style name="def:identifier"   foreground="cyan" />
+  <style name="def:statement"    foreground="orange" />
+  <style name="def:type"         foreground="yellow" />
+  <style name="def:operator"     foreground="green" />
+  <style name="def:preprocessor" foreground="purple" />
+  <style name="def:error"        foreground="magenta" />
+  <style name="def:note"         foreground="yellow" />
+
+  <style name="def:doc-comment-element" italic="true" />
+  <style name="def:underlined"          italic="true" underline="true" />
+</style-scheme>
