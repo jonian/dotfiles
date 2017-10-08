@@ -1,0 +1,18 @@
+.csd.tiled-top .titlebar,
+.csd.tiled-bottom .titlebar,
+.csd.tiled-left .titlebar,
+.csd.tiled-right .titlebar,
+.csd.tiled-top headerbar
+.csd.tiled-bottom headerbar
+.csd.tiled-left headerbar
+.csd.tiled-right headerbar {
+  border-radius: 0;
+}
+
+.titlebar headerbar:first-child {
+  border-top-right-radius: 0;
+}
+
+.titlebar headerbar:last-child {
+  border-top-left-radius: 0;
+}
