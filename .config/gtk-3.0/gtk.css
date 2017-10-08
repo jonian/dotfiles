@@ -1,11 +1,11 @@
-.csd.tiled-top .titlebar,
-.csd.tiled-bottom .titlebar,
-.csd.tiled-left .titlebar,
-.csd.tiled-right .titlebar,
-.csd.tiled-top headerbar
-.csd.tiled-bottom headerbar
-.csd.tiled-left headerbar
-.csd.tiled-right headerbar {
+.tiled-top .titlebar,
+.tiled-bottom .titlebar,
+.tiled-left .titlebar,
+.tiled-right .titlebar,
+.tiled-top headerbar,
+.tiled-bottom headerbar,
+.tiled-left headerbar,
+.tiled-right headerbar {
   border-radius: 0;
 }
 
