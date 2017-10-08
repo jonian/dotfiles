@@ -15,7 +15,6 @@
   <color name="orange"     value="#FD971F"/>
   <color name="purple"     value="#ae81ff"/>
 
-  <style name="text"                foreground="white" />
   <style name="draw-spaces"         foreground="select" />
   <style name="cursor"              foreground="white" />
   <style name="secondary-cursor"    foreground="white" />
@@ -24,6 +23,7 @@
   <style name="background-pattern"  background="black" />
   <style name="selection"           background="select" />
 
+  <style name="text"             foreground="white"      background="background" />
   <style name="line-numbers"     foreground="gray"       background="background" />
   <style name="bracket-match"    foreground="white"      background="gray" />
   <style name="bracket-mismatch" foreground="magenta"    background="gray" />
