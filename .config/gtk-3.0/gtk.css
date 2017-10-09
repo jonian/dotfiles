@@ -13,6 +13,6 @@
   border-top-right-radius: 0;
 }
 
-.titlebar headerbar:last-child {
+.titlebar headerbar:first-child ~ headerbar {
   border-top-left-radius: 0;
 }
