@@ -1,5 +1,9 @@
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
+#toolbar-menubar {
+  text-shadow: none !important;
+}
+
 #TabsToolbar .tabbrowser-tab::after,
 #TabsToolbar .tabbrowser-tab::before {
   visibility: hidden !important;
@@ -67,6 +71,11 @@
 
 /* Dark theme */
 
+:root:-moz-lwtheme-brighttext #toolbar-menubar {
+  background-color: #232729 !important;
+  border-bottom: 1px solid #1e2224 !important;
+}
+
 :root:-moz-lwtheme-brighttext #TabsToolbar .tabbrowser-tabs {
   background-color: #232729 !important;
 }
@@ -104,6 +113,11 @@
 
 
 /* Light theme */
+
+:root:-moz-lwtheme-darktext #toolbar-menubar {
+  background-color: #cfcfcd !important;
+  border-bottom: 1px solid #b6b6b3 !important;
+}
 
 :root:-moz-lwtheme-darktext #TabsToolbar .tabbrowser-tabs {
   background-color: #cfcfcd !important;
