@@ -1,22 +1,26 @@
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
+#TabsToolbar .tabbrowser-tabs {
+  background-color: #232729 !important;
+}
+
 #TabsToolbar .tabbrowser-tab::after,
 #TabsToolbar .tabbrowser-tab::before {
   visibility: hidden !important;
 }
 
 #TabsToolbar .tabbrowser-tab {
-  background: #272b35 !important;
+  background: #232729 !important;
   box-shadow: none !important;
 }
 
 #TabsToolbar .tabbrowser-tab[selected] {
-  background: #393f4c !important;
-  box-shadow: 1px 0 0 #1f222a, -1px 0 0 #1f222a !important;
+  background: #363d40 !important;
+  box-shadow: 1px 0 0 #1e2224, -1px 0 0 #1e2224 !important;
 }
 
 #TabsToolbar .tabbrowser-tab:hover:not([selected]) {
-  background: #1f222a !important;
+  background: #1e2224 !important;
 }
 
 #TabsToolbar .tabs-newtab-button {
@@ -25,8 +29,9 @@
 }
 
 #nav-bar {
-  padding-top: 4px  !important;
-  padding-bottom: 4px  !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+  background-color: #363d40 !important;
 }
 
 #urlbar-wrapper {
@@ -35,7 +40,7 @@
 }
 
 #urlbar {
-  border-inline-start: 1px solid #1f222a !important;
+  border-inline-start: 1px solid #1e2224 !important;
   border-top-left-radius: 2px !important;
   border-bottom-left-radius: 2px !important;
   margin-left: 4px !important;
@@ -43,7 +48,7 @@
 
 #urlbar,
 #navigator-toolbox .searchbar-textbox {
-  background-color: #272b35 !important;
+  background-color: #232729 !important;
   background-image: none !important;
   height: 26px !important;
 }
@@ -74,5 +79,5 @@
 
 #PanelUI-button {
   border-image: none !important;
-  border-left: 1px solid #272b35 !important;
+  border-left: 1px solid #232729 !important;
 }
