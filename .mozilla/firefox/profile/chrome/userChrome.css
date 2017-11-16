@@ -51,6 +51,10 @@
 
 /* Dark theme */
 
+:root:-moz-lwtheme-brighttext {
+  --toolbox-border-bottom-color: #1e2224 !important;
+}
+
 :root:-moz-lwtheme-brighttext #toolbar-menubar {
   background-color: #232729 !important;
   border-bottom: 1px solid #1e2224 !important;
@@ -90,6 +94,10 @@
 
 
 /* Light theme */
+
+:root:-moz-lwtheme-darktext {
+  --toolbox-border-bottom-color: #b6b6b3 !important;
+}
 
 :root:-moz-lwtheme-darktext #toolbar-menubar {
   background-color: #cfcfcd !important;
