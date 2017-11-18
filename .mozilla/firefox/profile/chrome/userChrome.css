@@ -18,6 +18,10 @@
   background: transparent !important;
 }
 
+#urlbar {
+  padding-right: 25px !important;
+}
+
 #urlbar,
 #navigator-toolbox .searchbar-textbox {
   background-image: none !important;
@@ -35,6 +39,16 @@
 
 #navigator-toolbox .toolbarbutton-menubutton-dropmarker:before {
   visibility: hidden !important;
+}
+
+#stop-reload-button .toolbarbutton-icon {
+  border-radius: 0px !important;
+  padding: 5px 6px !important;
+}
+
+#stop-reload-button {
+  transform: translateX(-34px) !important;
+  margin-right: -32px !important;
 }
 
 
