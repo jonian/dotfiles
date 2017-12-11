@@ -1,16 +1,16 @@
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
-#toolbar-menubar {
-  text-shadow: none !important;
-}
-
 #TabsToolbar .tabbrowser-tab::after,
 #TabsToolbar .tabbrowser-tab::before {
   visibility: hidden !important;
 }
 
-#TabsToolbar .tabbrowser-tab {
-  box-shadow: none !important;
+#TabsToolbar .tabbrowser-tab .tab-background {
+  border: none !important;
+}
+
+#TabsToolbar .tabbrowser-tab .tab-line {
+  visibility: hidden !important;
 }
 
 #TabsToolbar .tabs-newtab-button {
@@ -18,37 +18,14 @@
   background: transparent !important;
 }
 
-#nav-bar {
-  padding-top: 4px !important;
-  padding-bottom: 4px !important;
-}
-
-#urlbar-wrapper {
-  clip-path: none !important;
-  margin-inline-start: 0 !important;
-}
-
 #urlbar {
-  border-top-left-radius: 2px !important;
-  border-bottom-left-radius: 2px !important;
-  margin-left: 4px !important;
+  padding-right: 25px !important;
 }
 
 #urlbar,
 #navigator-toolbox .searchbar-textbox {
   background-image: none !important;
-  height: 26px !important;
-}
-
-#forward-button {
-  -moz-box-align: center !important;
-  margin-right: 2px !important;
-}
-
-#back-button > .toolbarbutton-icon,
-#forward-button > .toolbarbutton-icon {
-  border: 0 !important;
-  background: transparent !important;
+  border-radius: 2px !important;
   box-shadow: none !important;
 }
 
@@ -64,12 +41,33 @@
   visibility: hidden !important;
 }
 
-#PanelUI-button {
-  border-image: none !important;
+#stop-reload-button .toolbarbutton-icon {
+  border-radius: 0px !important;
+  padding: 5px 6px !important;
+}
+
+#stop-reload-button {
+  transform: translateX(-34px) !important;
+  margin-right: -32px !important;
+}
+
+
+/* Default theme */
+
+#TabsToolbar .tabbrowser-tab[selected] {
+  box-shadow: 1px 0 0 rgba(0, 0, 0, .2), -1px 0 0 rgba(0, 0, 0, .2) !important;
+}
+
+#nav-bar {
+  border-color: rgba(0, 0, 0, .2) !important;
 }
 
 
 /* Dark theme */
+
+:root:-moz-lwtheme-brighttext {
+  --toolbox-border-bottom-color: #1e2224 !important;
+}
 
 :root:-moz-lwtheme-brighttext #toolbar-menubar {
   background-color: #232729 !important;
@@ -93,12 +91,13 @@
   background: #1e2224 !important;
 }
 
-:root:-moz-lwtheme-brighttext #nav-bar {
-  background-color: #363d40 !important;
+:root:-moz-lwtheme-brighttext #TabsToolbar .tabbrowser-tab .tab-background {
+  background: none !important;
 }
 
-:root:-moz-lwtheme-brighttext #urlbar {
-  border-inline-start: 1px solid #1e2224 !important;
+:root:-moz-lwtheme-brighttext #nav-bar {
+  background-color: #363d40 !important;
+  border-color: #1e2224 !important;
 }
 
 :root:-moz-lwtheme-brighttext #urlbar,
@@ -107,12 +106,12 @@
   border-color: #1e2224 !important;
 }
 
-:root:-moz-lwtheme-brighttext #PanelUI-button {
-  border-left: 1px solid #232729 !important;
-}
-
 
 /* Light theme */
+
+:root:-moz-lwtheme-darktext {
+  --toolbox-border-bottom-color: #b6b6b3 !important;
+}
 
 :root:-moz-lwtheme-darktext #toolbar-menubar {
   background-color: #cfcfcd !important;
@@ -138,24 +137,17 @@
   background: #b6b6b3 !important;
 }
 
-:root:-moz-lwtheme-darktext #TabsToolbar .tab-close-button[selected]:not(:hover) {
-  background-image: -moz-image-rect(url("chrome://global/skin/icons/close.svg"), 0, 96, 16, 80) !important;
+:root:-moz-lwtheme-darktext #TabsToolbar .tabbrowser-tab .tab-background {
+  background: none !important;
 }
 
 :root:-moz-lwtheme-darktext #nav-bar {
   background-color: #dbdbd9 !important;
-}
-
-:root:-moz-lwtheme-darktext #urlbar {
-  border-inline-start: 1px solid #b6b6b3 !important;
+  border-color: #b6b6b3 !important;
 }
 
 :root:-moz-lwtheme-darktext #urlbar,
 :root:-moz-lwtheme-darktext #navigator-toolbox .searchbar-textbox {
   background-color: #cfcfcd !important;
   border-color: #b6b6b3 !important;
-}
-
-:root:-moz-lwtheme-darktext #PanelUI-button {
-  border-left: 1px solid #cfcfcd !important;
 }
