@@ -7,6 +7,8 @@
 
 alias ls='ls --color=auto'
 alias mksrcinfo='makepkg --printsrcinfo > .SRCINFO'
+alias pgimport='pg_restore --verbose --clean --no-acl --no-owner -h localhost -U postgres -d'
+alias pgexport='pg_dump -Fc --no-acl --no-owner -h localhost -U postgres'
 
 PS1="\[\e[31m\]┌\[\e[m\] \t \[\e[34m\]\u@\h\[\e[m\]\[\e[32m\]:\w\[\e[m\]\n\[\e[31m\]└╼\[\e[m\] "
 
@@ -46,4 +48,3 @@ export PATH="$PYTHONUSERBASE/bin:$PATH"
 
 # Local packages
 export PATH="$HOME/.local/bin:$PATH"
-
