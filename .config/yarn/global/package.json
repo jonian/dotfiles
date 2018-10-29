@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "create-nuxt-app": "*",
+    "element-theme": "*",
+    "element-theme-chalk": "*",
+    "foundation-cli": "*",
+    "hotel": "*",
+    "vue-cli": "*"
+  }
+}
