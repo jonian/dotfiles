@@ -7,7 +7,15 @@ gem 'pry-coolline'
 gem 'pry-stack_explorer'
 gem 'pry-tree'
 gem 'pry-rescue'
+gem 'pry-rails'
+gem 'pry-byebug'
+
+# Utilities
+gem 'awesome_print'
+
+# Code optimizers
+gem 'rubocop'
+gem 'rsense'
 
 # Various tools
-gem 'rubocop'
 gem 'marv'
