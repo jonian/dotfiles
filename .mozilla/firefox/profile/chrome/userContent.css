@@ -1,0 +1,11 @@
+/* New tab page */
+
+@-moz-document url(about:newtab), url(about:home) {
+  body {
+    overflow-y: auto !important;
+  }
+
+  .top-site-icon.default-icon {
+    display: none !important;
+  }
+}
