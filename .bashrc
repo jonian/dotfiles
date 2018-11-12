@@ -53,7 +53,7 @@ export PATH="$COMPOSER_HOME/vendor/bin:$PATH"
 
 # Python PIP packages
 export PIP_USER=yes
-export PYTHONUSERBASE=~/.pip
+export PYTHONUSERBASE="$HOME/.pip"
 export PATH="$PYTHONUSERBASE/bin:$PATH"
 
 # Local packages
