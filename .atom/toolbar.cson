@@ -1,0 +1,112 @@
+# This file is used by Flex Tool Bar to create buttons on your Tool Bar.
+# For more information how to use this package and create your own buttons,
+#   read the documentation on https://atom.io/packages/flex-tool-bar
+
+[
+  {
+    type: "button"
+    icon: "plus"
+    iconset: "mdi"
+    tooltip: "New File"
+    callback: "application:new-file"
+  }
+  {
+    type: "button"
+    icon: "file-document-box-outline"
+    iconset: "mdi"
+    tooltip: "Open File"
+    callback: "application:open-file"
+  }
+  {
+    type: "button"
+    icon: "folder-outline"
+    iconset: "mdi"
+    tooltip: "Open Folder"
+    callback: "application:open-folder"
+  }
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "map-legend"
+    iconset: "mdi"
+    tooltip: "Toggle Minimap"
+    callback: "minimap:toggle"
+  }
+  {
+    type: "button"
+    icon: "filter-remove"
+    iconset: "mdi"
+    tooltip: "Duplicate Removal"
+    callback: "duplicate-removal:toggle"
+  }
+  {
+    type: "button"
+    icon: "book-open"
+    iconset: "mdi"
+    tooltip: "Markdown Preview"
+    callback: "markdown-preview:toggle"
+    show: {
+      grammar: "Markdown"
+    }
+  }
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "format-font-size-increase"
+    iconset: "mdi"
+    tooltip: "Lower Case"
+    callback: "editor:upper-case"
+  }
+  {
+    type: "button"
+    icon: "format-font-size-decrease"
+    iconset: "mdi"
+    tooltip: "Lower Case"
+    callback: "editor:lower-case"
+  }
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "console"
+    iconset: "mdi"
+    tooltip: "Open Terminal"
+    callback: "open-terminal-here:open"
+  }
+  {
+    type: "button"
+    icon: "file-tree"
+    iconset: "mdi"
+    tooltip: "Open File Manager"
+    callback: "tree-view:show-current-file-in-file-manager"
+  }
+  {
+    type: "button"
+    icon: "play-speed"
+    iconset: "mdi"
+    tooltip: "Run File"
+    callback: "file-runner:run"
+  }
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "settings"
+    iconset: "mdi"
+    tooltip: "Settings"
+    callback: "settings-view:open"
+  }
+  {
+    type: "button"
+    icon: "ladybug"
+    iconset: "mdi"
+    tooltip: "Toggle DevTools"
+    callback: "window:toggle-dev-tools"
+  }
+]

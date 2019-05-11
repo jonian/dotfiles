@@ -1,0 +1,49 @@
+"*":
+  "atom-autocomplete-php":
+    binComposer: "composer"
+  "autocomplete-plus":
+    minimumWordLength: 2
+    similarSuggestionRemoval: "textOrSnippet"
+  core:
+    autoHideMenuBar: true
+    automaticallyUpdate: false
+    disabledPackages: [
+      "languageserver-vue"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "adwaita-monokai-syntax"
+    ]
+    useTreeSitterParsers: false
+  editor:
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    zoomFontWhenCtrlScrolling: false
+  "exception-reporting":
+    userId: "710e00c9-af2e-4702-9fae-837fb3f377d0"
+  linter:
+    disabledProviders: [
+      "reek"
+    ]
+  "linter-rubocop":
+    disableWhenNoConfigFile: true
+  minimap:
+    plugins:
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      "split-diff": true
+      "split-diffDecorationsZIndex": 0
+  "one-dark-ui":
+    stickyHeaders: true
+  "open-terminal-here":
+    command: "tilix"
+  "ruby-solargraph": {}
+  "tool-bar":
+    iconSize: "16px"
+    position: "Right"
+  welcome:
+    showOnStartup: false
