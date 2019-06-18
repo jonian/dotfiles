@@ -5,6 +5,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Set editor
+export EDITOR="nvim"
+
 # Tilix
 source /etc/profile.d/vte.sh
 
@@ -13,7 +16,7 @@ source /usr/share/chruby/chruby.sh
 source /usr/share/chruby/auto.sh
 
 # Ruby Gems
-export GEM_HOME=$(ruby -e 'print Gem.user_dir')
+export GEM_HOME=$(ruby -e 'puts Gem.user_dir')
 export PATH="$GEM_HOME/bin:$PATH"
 
 # Node JS
@@ -37,14 +40,16 @@ export PATH="$PYTHONUSERBASE/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
 # Local vessel path
-export VESSEL_PATH="/home/jonian/Projects/Vue/vessel"
+export VESSEL_PATH="$HOME/Projects/Vue/vessel"
 
 # Run fish as interactive shell
-if [ -z "$STARTEDFISH" ]; then
-  export STARTEDFISH=1;
+if [ -z "$STARTED_FISH" ]; then
   exec fish;
   exit;
 fi
+
+# Clear screen when switching to bash
+printf "\033c"
 
 # Command aliases
 alias ls='ls --color=auto'
