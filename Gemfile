@@ -15,7 +15,8 @@ gem 'awesome_print'
 
 # Code optimizers
 gem 'rubocop'
-gem 'rsense'
+gem 'reek'
+gem 'solargraph'
 
 # Various tools
 gem 'marv'
