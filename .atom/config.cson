@@ -7,9 +7,6 @@
   core:
     autoHideMenuBar: true
     automaticallyUpdate: false
-    disabledPackages: [
-      "languageserver-vue"
-    ]
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
@@ -29,6 +26,7 @@
     ]
   "linter-rubocop":
     disableWhenNoConfigFile: true
+  "linter-ui-default": {}
   minimap:
     plugins:
       "git-diff": true

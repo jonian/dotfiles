@@ -58,7 +58,7 @@
     type: "button"
     icon: "format-font-size-increase"
     iconset: "mdi"
-    tooltip: "Lower Case"
+    tooltip: "Upper Case"
     callback: "editor:upper-case"
   }
   {
