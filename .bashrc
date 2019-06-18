@@ -9,7 +9,9 @@
 export EDITOR="nvim"
 
 # Tilix
-source /etc/profile.d/vte.sh
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+  source /etc/profile.d/vte.sh
+fi
 
 # Chruby
 source /usr/share/chruby/chruby.sh
@@ -43,13 +45,14 @@ export PATH="$HOME/.local/bin:$PATH"
 export VESSEL_PATH="$HOME/Projects/Vue/vessel"
 
 # Run fish as interactive shell
-if [ -z "$STARTED_FISH" ]; then
+if [ ! $STARTED_FISH ]; then
   exec fish;
-  exit;
 fi
 
 # Clear screen when switching to bash
-printf "\033c"
+if [ $CLEAR_SCREEN ]; then
+  printf "\033c";
+fi
 
 # Command aliases
 alias ls='ls --color=auto'
