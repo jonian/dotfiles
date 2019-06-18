@@ -15,6 +15,8 @@ gem 'awesome_print'
 
 # Code optimizers
 gem 'rubocop'
+gem 'rubocop-rails'
+gem 'rubocop-performance'
 gem 'reek'
 gem 'solargraph'
 
