@@ -4,8 +4,8 @@
 
   <color name="background" value="#2d2d2d"/>
   <color name="pattern"    value="#232323"/>
-  <color name="inactive"   value="#393939"/>
-  <color name="select"     value="#363636"/>
+  <color name="inactive"   value="#666666"/>
+  <color name="select"     value="#464646"/>
   <color name="white"      value="#f8f8f2"/>
   <color name="black"      value="#1e1e1e"/>
   <color name="magenta"    value="#f92672"/>
