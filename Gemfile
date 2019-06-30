@@ -12,6 +12,7 @@ gem 'pry-byebug'
 
 # Utilities
 gem 'awesome_print'
+gem 'colorls'
 
 # Code optimizers
 gem 'rubocop'
