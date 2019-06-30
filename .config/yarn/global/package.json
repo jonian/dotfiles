@@ -1,10 +1,13 @@
 {
   "dependencies": {
+    "@gridsome/cli": "*",
+    "@vue/cli": "*",
     "create-nuxt-app": "*",
-    "element-theme": "*",
-    "element-theme-chalk": "*",
     "foundation-cli": "*",
     "hotel": "*",
-    "vue-cli": "*"
+    "localtunnel": "*",
+    "nuxt": "*",
+    "serve": "*",
+    "vue-language-server": "*"
   }
 }
