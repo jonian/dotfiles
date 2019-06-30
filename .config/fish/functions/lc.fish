@@ -1,3 +1,3 @@
 function lc
-   command colorls $argv
+  command colorls $argv
 end
