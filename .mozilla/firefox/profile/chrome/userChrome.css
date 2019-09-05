@@ -112,7 +112,7 @@
 }
 
 :root:-moz-lwtheme-brighttext #urlbar,
-:root:-moz-lwtheme-brighttext #navigator-toolbox .searchbar-textbox {
+:root:-moz-lwtheme-brighttext #searchbar {
   background-color: #232729 !important;
   border-color: #1e2224 !important;
 }
@@ -158,7 +158,7 @@
 }
 
 :root:-moz-lwtheme-darktext #urlbar,
-:root:-moz-lwtheme-darktext #navigator-toolbox .searchbar-textbox {
+:root:-moz-lwtheme-darktext #searchbar {
   background-color: #cfcfcd !important;
   border-color: #b6b6b3 !important;
 }
