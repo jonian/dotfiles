@@ -77,44 +77,44 @@
 /* Dark theme */
 
 :root:-moz-lwtheme-brighttext {
-  --toolbox-border-bottom-color: #1e2224 !important;
+  --toolbox-border-bottom-color: #070707 !important;
 }
 
-:root:-moz-lwtheme-brighttext #toolbar-menubar {
-  background-color: #232729 !important;
-  border-bottom: 1px solid #1e2224 !important;
+#toolbar-menubar[brighttext] {
+  background-color: #252526 !important;
+  border-bottom: 1px solid #070707 !important;
 }
 
-:root:-moz-lwtheme-brighttext #TabsToolbar {
-  background-color: #232729 !important;
+#TabsToolbar[brighttext] {
+  background-color: #252526 !important;
 }
 
-:root:-moz-lwtheme-brighttext #TabsToolbar .tabbrowser-tab {
-  background: #232729 !important;
+#TabsToolbar[brighttext] .tabbrowser-tab {
+  background: #252526 !important;
 }
 
-:root:-moz-lwtheme-brighttext #TabsToolbar .tabbrowser-tab[selected] {
-  background: #363d40 !important;
-  box-shadow: 1px 0 0 #1e2224, -1px 0 0 #1e2224 !important;
+#TabsToolbar[brighttext] .tabbrowser-tab[selected] {
+  background: #2d2d2d !important;
+  box-shadow: 1px 0 0 #070707, -1px 0 0 #070707 !important;
 }
 
-:root:-moz-lwtheme-brighttext #TabsToolbar .tabbrowser-tab:hover:not([selected]) {
-  background: #1e2224 !important;
+#TabsToolbar[brighttext] .tabbrowser-tab:hover:not([selected]) {
+  background: #323232 !important;
 }
 
-:root:-moz-lwtheme-brighttext #TabsToolbar .tabbrowser-tab .tab-background {
+#TabsToolbar[brighttext] .tabbrowser-tab .tab-background {
   background: none !important;
 }
 
-:root:-moz-lwtheme-brighttext #nav-bar {
-  background-color: #363d40 !important;
-  border-color: #1e2224 !important;
+#nav-bar[brighttext] {
+  background-color: #2d2d2d !important;
+  border-color: #070707 !important;
 }
 
-:root:-moz-lwtheme-brighttext #urlbar,
-:root:-moz-lwtheme-brighttext #searchbar {
-  background-color: #232729 !important;
-  border-color: #1e2224 !important;
+#nav-bar[brighttext] #urlbar,
+#nav-bar[brighttext] #searchbar {
+  background-color: #252526 !important;
+  border-color: #070707 !important;
 }
 
 
@@ -124,41 +124,41 @@
   --toolbox-border-bottom-color: #b6b6b3 !important;
 }
 
-:root:-moz-lwtheme-darktext #toolbar-menubar {
+#toolbar-menubar[darktext] {
   background-color: #cfcfcd !important;
   border-bottom: 1px solid #b6b6b3 !important;
 }
 
-:root:-moz-lwtheme-darktext #TabsToolbar #tabbrowser-tabs {
+#TabsToolbar[darktext] {
   background-color: #cfcfcd !important;
 }
 
-:root:-moz-lwtheme-darktext #TabsToolbar .tabbrowser-tab {
+#TabsToolbar[darktext] .tabbrowser-tab {
   background: #cfcfcd !important;
   color: #8b8e8f !important;
 }
 
-:root:-moz-lwtheme-darktext #TabsToolbar .tabbrowser-tab[selected] {
+#TabsToolbar[darktext] .tabbrowser-tab[selected] {
   background: #dbdbd9 !important;
   box-shadow: 1px 0 0 #b6b6b3, -1px 0 0 #b6b6b3 !important;
   color: #2e3436 !important;
 }
 
-:root:-moz-lwtheme-darktext #TabsToolbar .tabbrowser-tab:hover:not([selected]) {
+#TabsToolbar[darktext] .tabbrowser-tab:hover:not([selected]) {
   background: #b6b6b3 !important;
 }
 
-:root:-moz-lwtheme-darktext #TabsToolbar .tabbrowser-tab .tab-background {
+#TabsToolbar[darktext] .tabbrowser-tab .tab-background {
   background: none !important;
 }
 
-:root:-moz-lwtheme-darktext #nav-bar {
+#nav-bar[darktext] {
   background-color: #dbdbd9 !important;
   border-color: #b6b6b3 !important;
 }
 
-:root:-moz-lwtheme-darktext #urlbar,
-:root:-moz-lwtheme-darktext #searchbar {
+#nav-bar[darktext] #urlbar,
+#nav-bar[darktext] #searchbar {
   background-color: #cfcfcd !important;
   border-color: #b6b6b3 !important;
 }

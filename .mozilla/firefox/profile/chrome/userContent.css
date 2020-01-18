@@ -9,3 +9,11 @@
     display: none !important;
   }
 }
+
+/* Dark theme */
+
+body[lwt-newtab-brighttext] {
+  --newtab-background-color: #2d2d2d !important;
+  --newtab-textbox-background-color: #2d2d2d !important;
+  --lwt-sidebar-background-color: #2d2d2d !important;
+}
