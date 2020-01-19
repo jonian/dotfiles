@@ -21,7 +21,7 @@
 }
 
 #urlbar {
-  padding-right: 25px !important;
+  padding-right: 27px !important;
 }
 
 #urlbar,
@@ -49,8 +49,8 @@
 }
 
 #urlbar-container + #stop-reload-button {
-  transform: translateX(-34px) !important;
-  margin-right: -32px !important;
+  transform: translateX(-36px) !important;
+  margin-right: -34px !important;
 }
 
 .private-browsing-indicator {
@@ -77,29 +77,30 @@
 /* Dark theme */
 
 :root:-moz-lwtheme-brighttext {
-  --toolbox-border-bottom-color: #070707 !important;
+  --toolbox-border-bottom-color: #1b1b1b !important;
+  --lwt-sidebar-background-color: #2d2d2d !important;
 }
 
 #toolbar-menubar[brighttext] {
-  background-color: #252526 !important;
-  border-bottom: 1px solid #070707 !important;
+  background-color: #282828 !important;
+  border-bottom: 1px solid #1b1b1b !important;
 }
 
 #TabsToolbar[brighttext] {
-  background-color: #252526 !important;
+  background-color: #282828 !important;
 }
 
 #TabsToolbar[brighttext] .tabbrowser-tab {
-  background: #252526 !important;
+  background: #282828 !important;
 }
 
 #TabsToolbar[brighttext] .tabbrowser-tab[selected] {
-  background: #2d2d2d !important;
-  box-shadow: 1px 0 0 #070707, -1px 0 0 #070707 !important;
+  background: #353535 !important;
+  box-shadow: 1px 0 0 #1b1b1b, -1px 0 0 #1b1b1b !important;
 }
 
 #TabsToolbar[brighttext] .tabbrowser-tab:hover:not([selected]) {
-  background: #323232 !important;
+  background: #2a2a2a !important;
 }
 
 #TabsToolbar[brighttext] .tabbrowser-tab .tab-background {
@@ -107,14 +108,14 @@
 }
 
 #nav-bar[brighttext] {
-  background-color: #2d2d2d !important;
-  border-color: #070707 !important;
+  background-color: #353535 !important;
+  border-color: #1b1b1b !important;
 }
 
 #nav-bar[brighttext] #urlbar,
 #nav-bar[brighttext] #searchbar {
-  background-color: #252526 !important;
-  border-color: #070707 !important;
+  background-color: #2d2d2d !important;
+  border-color: #1b1b1b !important;
 }
 
 
@@ -122,6 +123,7 @@
 
 :root:-moz-lwtheme-darktext {
   --toolbox-border-bottom-color: #b6b6b3 !important;
+  --lwt-sidebar-background-color: #cfcfcd !important;
 }
 
 #toolbar-menubar[darktext] {
