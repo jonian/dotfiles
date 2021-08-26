@@ -74,7 +74,7 @@ if [ $STARTED_BASH ]; then
   printf "\033c";
 
   # Starship
-  eval "$(starship init bash)"
+  eval "$(starship init bash)";
 fi
 
 # Run fish as interactive shell
