@@ -16,10 +16,6 @@ fi
 # Completion
 source /usr/share/bash-completion/bash_completion
 
-# Chruby
-source /usr/share/chruby/chruby.sh
-source /usr/share/chruby/auto.sh
-
 # PHP Brew
 export PHPBREW_RC_ENABLE=1
 source ~/.phpbrew/bashrc
@@ -29,10 +25,6 @@ export HISTCONTROL=ignoreboth:erasedups
 
 # Set editor
 export EDITOR="nvim"
-
-# Ruby Gems
-export GEM_HOME=$(ruby -e 'puts Gem.user_dir')
-export PATH="$GEM_HOME/bin:$PATH"
 
 # Node JS
 export NPM_HOME="$HOME/.node_modules"
@@ -72,6 +64,9 @@ export VESSEL_PATH="$HOME/Projects/Vue/vessel"
 if [ $STARTED_BASH ]; then
   # Clear screen on switch
   printf "\033c";
+
+  # Frum
+  eval "$(frum init)";
 
   # Starship
   eval "$(starship init bash)";
