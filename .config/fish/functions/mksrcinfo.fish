@@ -1,3 +1,3 @@
 function mksrcinfo
-   command makepkg --printsrcinfo > .SRCINFO
+  command makepkg --printsrcinfo > .SRCINFO
 end
