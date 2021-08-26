@@ -16,9 +16,6 @@ alias mysqlimport='mysql -u root -p'
 alias mysqlexport='mysqldump -u root -p'
 alias svgclean='for f in *.svg ; do svgcleaner --indent=2 "$f" "$f" ; done'
 
-# Bash Prompt
-PS1="\[\e[31m\]┌\[\e[m\] \t \[\e[34m\]\u@\h\[\e[m\]\[\e[32m\]:\w\[\e[m\]\n\[\e[31m\]└╼\[\e[m\] "
-
 # Tilix
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
   source /etc/profile.d/vte.sh
@@ -30,6 +27,10 @@ source /usr/share/bash-completion/bash_completion
 # Chruby
 source /usr/share/chruby/chruby.sh
 source /usr/share/chruby/auto.sh
+
+# PHP Brew
+export PHPBREW_RC_ENABLE=1
+source ~/.phpbrew/bashrc
 
 # Bash Variables
 export HISTCONTROL=ignoreboth:erasedups
@@ -58,6 +59,14 @@ export PIP_USER=yes
 export PYTHONUSERBASE="$HOME/.pip"
 export PATH="$PYTHONUSERBASE/bin:$PATH"
 
+# Android Studio
+export ANDROID_HOME="$HOME/Android/Sdk"
+export PATH="$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools/bin:$PATH"
+
+# Go Modules
+export GOPATH=$HOME/.golang
+export PATH=$PATH:$GOPATH/bin
+
 # Local packages
 export PATH="$HOME/.local/bin:$PATH"
 
@@ -67,9 +76,13 @@ export VESSEL_PATH="$HOME/Projects/Vue/vessel"
 # Return if execution string present
 [[ $BASH_EXECUTION_STRING ]] && return
 
-# Clear screen when switching to bash
-if [ $CLEAR_SCREEN ]; then
+# Execute when switching to bash
+if [ $STARTED_BASH ]; then
+  # Clear screen on switch
   printf "\033c";
+
+  # Starship
+  eval "$(starship init bash)"
 fi
 
 # Run fish as interactive shell

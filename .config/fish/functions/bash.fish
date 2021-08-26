@@ -4,7 +4,7 @@ function bash
   if test (count $argv) -gt 0
     command bash $argv
   else
-    set -lx CLEAR_SCREEN "yes"
+    set -lx STARTED_BASH "yes"
     exec bash $argv
   end
 end
