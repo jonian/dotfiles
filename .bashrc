@@ -26,6 +26,10 @@ export HISTCONTROL=ignoreboth:erasedups
 # Set editor
 export EDITOR="nvim"
 
+# Ruby Gems
+export GEM_HOME=$(ruby -e 'puts Gem.user_dir')
+export PATH="$GEM_HOME/bin:$PATH"
+
 # Node JS
 export NPM_HOME="$HOME/.node_modules"
 export PATH="$NPM_HOME/bin:$PATH"
