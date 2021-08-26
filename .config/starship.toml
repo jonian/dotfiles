@@ -5,4 +5,5 @@ success_symbol = "[➜](bold green)"
 error_symbol = "[➜](bold red)"
 
 [ruby]
-detect_files = ["Gemfile", "Rakefile", ".gemspec", ".rb"]
+detect_extensions = ["rb", "gemspec"]
+detect_files = ["Gemfile", "Rakefile"]
