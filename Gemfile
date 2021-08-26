@@ -1,10 +1,6 @@
 # Rubygems source
 source 'https://rubygems.org'
 
-# Utilities
-gem 'awesome_print'
-gem 'colorls'
-
 # Code optimizers
 gem 'rubocop'
 gem 'rubocop-rails'
