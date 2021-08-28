@@ -16,6 +16,9 @@ fi
 # Completion
 source /usr/share/bash-completion/bash_completion
 
+# Frum
+eval "$(frum init)";
+
 # PHP Brew
 export PHPBREW_RC_ENABLE=1
 source ~/.phpbrew/bashrc
@@ -68,9 +71,6 @@ export VESSEL_PATH="$HOME/Projects/Vue/vessel"
 if [ $STARTED_BASH ]; then
   # Clear screen on switch
   printf "\033c";
-
-  # Frum
-  eval "$(frum init)";
 
   # Starship
   eval "$(starship init bash)";
