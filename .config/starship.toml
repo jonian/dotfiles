@@ -4,6 +4,34 @@ add_newline = false
 success_symbol = "[➜](bold green)"
 error_symbol = "[➜](bold red)"
 
+[git_branch]
+symbol = " "
+
+[git_commit]
+tag_symbol = "  "
+
+[package]
+symbol = " "
+
 [ruby]
+symbol = " "
 detect_extensions = ["rb", "gemspec"]
 detect_files = ["Gemfile", "Rakefile"]
+
+[crystal]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[python]
+symbol = " "
+
+[php]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[rust]
+symbol = " "
