@@ -61,9 +61,6 @@ export PATH=$PATH:$GOPATH/bin
 # Local packages
 export PATH="$HOME/.local/bin:$PATH"
 
-# Local vessel path
-export VESSEL_PATH="$HOME/Projects/Vue/vessel"
-
 # Return if execution string present
 [[ $BASH_EXECUTION_STRING ]] && return
 
