@@ -19,6 +19,10 @@ source /usr/share/bash-completion/bash_completion
 # Frum
 eval "$(frum init)";
 
+# Fnm
+export FNM_DIR="$HOME/.fnm"
+eval "$(fnm env --use-on-cd)"
+
 # PHP Brew
 export PHPBREW_RC_ENABLE=1
 source ~/.phpbrew/bashrc
