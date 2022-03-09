@@ -17,6 +17,7 @@ fi
 source /usr/share/bash-completion/bash_completion
 
 # Frum
+export FRUM_DIR="$HOME/.frum"
 eval "$(frum init)";
 
 # Fnm
