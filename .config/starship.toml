@@ -15,8 +15,6 @@ symbol = " "
 
 [ruby]
 symbol = " "
-detect_extensions = ["rb", "gemspec"]
-detect_files = ["Gemfile", "Rakefile"]
 
 [crystal]
 symbol = " "
