@@ -5,4 +5,93 @@
     width: 100% !important;
     height: 100% !important;
   }
+
+  .top-site-button .tile {
+    overflow: hidden !important;
+  }
+
+  .top-site-button .top-site-icon {
+    background-color: transparent !important;
+  }
+
+  .top-site-button[href*="hardpixel.eu"] .tile {
+    background-color: #fff !important;
+  }
+
+  .top-site-button[href*="statica.eu"] .tile {
+    background-color: #2a2aff !important;
+  }
+
+  .top-site-button[href*="reddit.com"] .tile {
+    background-color: #ff4500 !important;
+  }
+
+  .top-site-button[href*="github.com"] .tile {
+    padding: 0.4rem;
+    background-color: #fcfcfc !important;
+  }
+
+  /* https://about.gitlab.com/nuxt-images/ico/apple-touch-icon-180x180.png */
+  .top-site-button[href*="gitlab.com"] .tile {
+    padding: 0.3rem;
+    background-color: #544289 !important;
+  }
+
+  /* https://www.gnome.org/wp-content/uploads/2020/08/cropped-icon-180x180.jpg */
+  .top-site-button[href*="gnome.org"] .tile {
+    padding: 0.3rem;
+    background-color: #4584cd !important;
+  }
+
+  /* https://about.gitlab.com/nuxt-images/ico/favicon-192x192.png */
+  .top-site-button[href*="code.hard"] .tile {
+    padding: 0.5rem;
+    background-color: #fff !important;
+  }
+
+  .top-site-button[href*="basecamp.com"] .tile {
+    padding: 0.5rem;
+    background-color: #ffe000 !important;
+  }
+
+  /* https://a.slack-edge.com/95b9/img/services/sentry_512.png */
+  .top-site-button[href*="sentry.io"] .tile {
+    background-color: #fb4226 !important;
+  }
+
+  .top-site-button[href*="netlify.com"] .tile {
+    padding: 0.2rem;
+    background-color: #fff !important;
+  }
+
+  .top-site-button[href*="digitalocean.com"] .tile {
+    padding: 0.2rem;
+    background-color: #fff !important;
+  }
+
+  /* https://www.scaleway.com/favicon/apple-touch-icon-180x180.png */
+  .top-site-button[href*="scaleway.com"] .tile {
+    padding: 0.5rem;
+    background-color: #4f0599 !important;
+  }
+
+  .top-site-button[href*="rubygems.org"] .tile {
+    padding: 0.7rem;
+    background-color: #e9573f !important;
+  }
+
+  .top-site-button[href*="rubygems.org"] .top-site-icon {
+    filter: brightness(100) !important;
+  }
+
+  .top-site-button[href*="npmjs.com"] .tile {
+    padding: 0.2rem;
+    background-color: #cb0000 !important;
+  }
+
+  /* https://archlinux.org/static/logos/apple-touch-icon-144x144.png */
+  .top-site-button[href*="archlinux.org"] .tile {
+    padding: 0.7rem;
+    background-color: #fff !important;
+  }
 }
