@@ -6,6 +6,12 @@
     height: 100% !important;
   }
 
+  .top-site-outer .tile .icon-wrapper.letter-fallback::before {
+    top: -1px !important;
+    left: -2px !important;
+    transform: none !important;
+  }
+
   .top-site-button .tile {
     overflow: hidden !important;
   }
@@ -20,6 +26,10 @@
 
   .top-site-button[href*="statica.eu"] .tile {
     background-color: #2a2aff !important;
+  }
+
+  .top-site-button[href*="admin.statica.eu"] .tile {
+    background-image: linear-gradient(45deg, #7e57c2 10%, #059ae5 100%) !important;
   }
 
   .top-site-button[href*="reddit.com"] .tile {
@@ -81,6 +91,18 @@
   }
 
   .top-site-button[href*="rubygems.org"] .top-site-icon {
+    filter: brightness(100) !important;
+  }
+
+  .top-site-button[href*="iconscout.com"] .tile {
+    background-color: #00c6ff !important;
+  }
+
+  .top-site-button[href*="marvelapp.com"] .tile {
+    background-color: #1fb6ff !important;
+  }
+
+  .top-site-button[href*="marvelapp.com"] .top-site-icon {
     filter: brightness(100) !important;
   }
 
