@@ -116,4 +116,14 @@
     padding: 0.7rem;
     background-color: #fff !important;
   }
+
+  .top-site-button[href*="nitter"] .tile {
+    padding: 0.5rem;
+    background-color: #434242 !important;
+  }
+
+  .top-site-button[href*="linkedin.com"] .tile {
+    padding: 0.5rem;
+    background-color: #0077b5 !important;
+  }
 }
