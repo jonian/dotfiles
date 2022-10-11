@@ -69,11 +69,6 @@
     background-color: #fb4226 !important;
   }
 
-  .top-site-button[href*="netlify.com"] .tile {
-    padding: 0.2rem;
-    background-color: #fff !important;
-  }
-
   .top-site-button[href*="digitalocean.com"] .tile {
     padding: 0.2rem;
     background-color: #fff !important;

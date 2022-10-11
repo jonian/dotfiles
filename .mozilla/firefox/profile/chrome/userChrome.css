@@ -7,6 +7,7 @@
 }
 
 :root[uidensity="compact"] {
+  --tab-min-height: 36px !important;
   --urlbar-min-height: 29px !important;
   --urlbar-icon-padding: 6px !important;
 }
@@ -24,6 +25,14 @@
 .tabbrowser-tab {
   margin-inline-start: 0px !important;
   padding-inline: 0px !important;
+}
+
+.tabbrowser-tab .tab-label-container {
+  height: 1.7em !important;
+}
+
+.tabbrowser-tabs .tab-secondary-label {
+  display: none !important;
 }
 
 .tabbrowser-tab[selected="true"] {
