@@ -11,22 +11,22 @@ symbol = " "
 tag_symbol = "  "
 
 [package]
-symbol = " "
+symbol = "󰏗 "
 
 [ruby]
 symbol = " "
 
 [crystal]
-symbol = " "
+symbol = " "
 
 [nodejs]
-symbol = " "
+symbol = "󰎙 "
 
 [python]
-symbol = " "
+symbol = " "
 
 [php]
-symbol = " "
+symbol = "󰌟 "
 
 [golang]
 symbol = " "
