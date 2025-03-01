@@ -1,13 +1,15 @@
 /* @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul); */
 
 :root {
+  --tab-min-height: 32px !important;
   --tab-border-radius: 0px !important;
   --tab-shadow-max-size: 0px !important;
   --proton-tab-block-margin: 0px !important;
+  --chrome-content-separator-color: rgb(30, 30, 40) !important;
 }
 
 :root[uidensity="compact"] {
-  --tab-min-height: 36px !important;
+  --tab-min-height: 30px !important;
   --urlbar-min-height: 29px !important;
   --urlbar-icon-padding: 6px !important;
 }
@@ -41,6 +43,11 @@
 .titlebar-spacer[type="pre-tabs"],
 .titlebar-spacer[type="post-tabs"] {
   width: 6px !important;
+}
+
+#tabbrowser-tabs[orient="horizontal"][movingtab] {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .tabbrowser-tab {
